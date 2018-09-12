@@ -44,9 +44,9 @@ class App extends Component {
         </header>
         <div className="Test">
           <button onClick={this.handleReset} disabled={skipDays === 0}>Today</button>
-          <button onClick={this.handleSkipDays(-1)} disabled={skipDays <= LIMITS.MIN}>Left</button>
-          <div style={{'color': skipDays === 0 ? 'red': ''}}>{date.toString()}</div>
-          <button onClick={this.handleSkipDays(1)} disabled={skipDays >= LIMITS.MAX}>Right</button>
+          <button onClick={this.handleSkipDays(-1)} disabled={skipDays <= LIMITS.MIN}>&lt;</button>
+          <div className={`Date-body ${skipDays === 0 ? 'Today-active': ''}`}>{date.toString()}</div>
+          <button onClick={this.handleSkipDays(1)} disabled={skipDays >= LIMITS.MAX}>&gt;</button>
           <div>{this.timezone.name()}</div>
         </div>
       </div>

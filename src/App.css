@@ -25,6 +25,33 @@
 .Test {
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.Test button {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 50px;
+  min-height: 50px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.Test .Date-body {
+  flex-basis: 500px;
+  border: 1px solid gray;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 1px 1px #808080;
+}
+
+.Today-active {
+  box-shadow: 1px 1px 1px 1px #0072ff !important;
 }
 
 @keyframes App-logo-spin {
